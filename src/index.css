@@ -1,0 +1,71 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Styles for the entire container */
+.container-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Styles for each individual container */
+.container {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+}
+
+/* Image styling for the container */
+.container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Title and description styling */
+.container h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Price styling */
+.container p:last-child {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .container-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
